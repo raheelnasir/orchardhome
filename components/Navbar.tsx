@@ -12,8 +12,8 @@ const Navbar = () => {
 
       <div className='flexCenter'>
         <Button
-          type='button'
-          title='Contact Now'
+          type='button' 
+          title='Contact  '
           icon='/user.svg'
           variant='btn_dark_green'
         />

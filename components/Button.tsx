@@ -14,7 +14,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button
       type={type}
-      className={`flexCenter gap-3 rounded-full border 
+      className={`flexCenter  rounded-full border 
         ${variant} ${full && 'w-full'}`}>
       <a href='https://wa.me/919596000000' target='_blank' className='flex'>
         {icon && <Image alt={title} src={icon} width={24} height={24} />}

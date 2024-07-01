@@ -1,27 +1,34 @@
 import Image from 'next/image';
+import Container from './Container';
 
 const Guide = () => {
   return (
-    
+
     <section className='flexCenter flex-col'>
-      <div className='padding-container max-container w-full pb-24'>
-        <Image src='/camp.svg' alt='camp' width={50} height={50} />
-        <p className='uppercase regular-18 mt-1 mb-3 text-green-50 '>
-          we are here for you
-        </p>
-        <div className='flex  flex-wrap justify-between gap-5 lg:gap-10'>
-          <h2 className='bold-40  font-[cursive] xl:max-w-[450px]'>
-          Nature Lover's Paradise
+      <div className='relative flex  min-h-[100vh] w-[100vw]'>
+        <Container customClasses="lg:absolute top-1/4 lg:left-1/2 lg:-translate-x-1/2">
+
+          <div className='   w-full pb-24'>
+            <Image src='/camp.svg' alt='camp' width={50} height={50} />
+            <p className='uppercase regular-18 mt-1 mb-3 text-green-50 '>
+              we are here for you
+            </p>
+            <div className='flex  flex-wrap justify-between gap-5 lg:gap-10'>
+              <h2 className='bold-40  font-[cursive] xl:max-w-[450px]'>
+                Nature Lover's Paradise
 
 
 
 
 
-</h2>
-          <p className='regular-16 text-gray-30 xl:max-w-[620px]'>
-            Discover the serene beauty of Orchard House, where comfort meets nature. Enjoy our eye-catching rooms with stunning mountain and forest views, perfect for nature lovers seeking a peaceful retreat. Enhance your outdoor adventures with our high-quality travel equipment, including cozy tents and sturdy hiking sticks. Travel effortlessly with our reliable transportation services, ensuring a smooth and safe journey. Dive into a variety of focused activities, from wildlife tourism to savoring traditional Kashmiri food, and immerse yourself in local culture through agricultural and horticultural experiences. Orchard House is your ultimate destination for a relaxing and enriching escape.
-          </p>
-        </div>
+              </h2>
+              <p className='regular-16 text-gray-30 xl:max-w-[620px]'>
+                Discover the serene beauty of Orchard House, where comfort meets nature. Enjoy our eye-catching rooms with stunning mountain and forest views, perfect for nature lovers seeking a peaceful retreat. Enhance your outdoor adventures with our high-quality travel equipment, including cozy tents and sturdy hiking sticks. Travel effortlessly with our reliable transportation services, ensuring a smooth and safe journey. Dive into a variety of focused activities, from wildlife tourism to savoring traditional Kashmiri food, and immerse yourself in local culture through agricultural and horticultural experiences. Orchard House is your ultimate destination for a relaxing and enriching escape.
+              </p>
+            </div>
+          </div>
+
+        </Container>
       </div>
 
       <div className='flexCenter max-container relative w-full'>

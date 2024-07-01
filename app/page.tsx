@@ -11,9 +11,10 @@ export default function Home() {
     <>
       <Hero />
       <Camp />
-      <About />
       <Guide />
       <PhotoGallery />
+      <About />
+
       <Feature />
     </>
   );
