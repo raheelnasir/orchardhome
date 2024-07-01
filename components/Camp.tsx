@@ -36,21 +36,21 @@ const Camp = () => {
     <section className='relative 2xl:max-container flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20'>
       <div className='hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]'>
         <CampSite
-          backgroundImage='/img-1.png'
+          backgroundImage='/outview.png'
           title='Orchard House'
           subtitle='Traveling in the Wilderness'
           peopleJoined='50+ Joined'
         />
 
         <CampSite
-          backgroundImage='/img-2.png'
+          backgroundImage='/img-1.png'
           title='Tent Equipment'
           subtitle='Somewhere in the Wilderness'
           peopleJoined='50+ Joined'
 
         />
         <CampSite
-          backgroundImage='/gallery/bedroom2.jpg'
+          backgroundImage='/bedroom2.png'
           title='Mountain View Camp'
           subtitle='Somewhere in the Wilderness'
           peopleJoined='50+ Joined'

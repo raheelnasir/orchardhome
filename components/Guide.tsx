@@ -5,8 +5,8 @@ const Guide = () => {
   return (
 
     <section className='flexCenter flex-col'>
-      <div className='relative flex  min-h-[100vh] w-[100vw]'>
-        <Container customClasses="lg:absolute top-1/4 lg:left-1/2 lg:-translate-x-1/2">
+      <div className='relative flex  min-h-[80vh] w-[100vw]'>
+        <Container customClasses="lg:absolute top-0 lg:left-1/2 lg:-translate-x-1/2">
 
           <div className='   w-full pb-24'>
             <Image src='/camp.svg' alt='camp' width={50} height={50} />

@@ -36,8 +36,8 @@ export default function About() {
 					
 				</div>
 			</Container>
-			<Image className="mt-5 lg:hidden" src="/boat.png" width={1000} height={486} alt="Holding guitar" />
-			<Image className="hidden lg:max-w-lg lg:block xl:max-w-xl" src="/boat.png" width={750} height={533} alt="Holding guitar" />
+			<Image className="mt-5 lg:hidden" src="/gallery/mountainskyview.jpg" width={1000} height={486} alt="Holding guitar" />
+			<Image className="hidden lg:max-w-lg lg:block xl:max-w-xl" src="/gallery/mountainskyview.jpg" width={750} height={533} alt="Holding guitar" />
 		</section>
 	);
 }

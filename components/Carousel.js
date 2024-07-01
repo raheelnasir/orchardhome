@@ -14,7 +14,7 @@ const galleryThumbnails = [
         club: "House Shots",
         city: "Berlin",
         date: "25/12/2017",
-        slides: [{ src: "/gallery/home.jpg" }, { src: "/gallery/bedroom1.jpg" }, { src: "/gallery/bedroom2.jpg" }, { src: "/gallery/washroom.JPG" }, { src: "/gallery/farview.JPG" }],
+        slides: [{ src: "/gallery/home.jpg" }, { src: "/gallery/bedroom1.png" }, { src: "/gallery/bedroom2.png" }, { src: "/gallery/washroom.JPG" }, { src: "/gallery/farview.JPG" }],
     },
     {
         id: 6,
@@ -50,15 +50,15 @@ export default function PhotoGallery() {
         <section id="photo-gallery" className={`w-full  mt-16 pb-14 lg:mt-56  lg:pb-56 lg:mb-[22.5rem] reveal${isIntersecting ? " visible" : ""}`} ref={sectionRef}>
             <Container customClasses="lg:absolute  lg:left-1/2 lg:-translate-x-1/2">
                 <h2 className="font-bold text-6xl pb-6">Gallery</h2>
-                <p>Past shows.</p>
-                <div className="flex flex-row justify-center gap-4 mt-5">
+                <p>Click to see more..</p>
+                <div className="flex md:flex-row flex-col  justify-center gap-4 mt-5">
                     {galleryThumbnails.map((item, index) => {
                         return (
                             <div className="flex flex-col mb-5 leading-none" key={item.id}>
                                 <div className="w-full h-full rounded-lg bg-fluo-green transition-all">
                                     <Image className="rounded-lg cursor-pointer hover:opacity-60 lg:w-[40vw] w-[80vw] min-h-[300px] max-h-[300px] transition-all" src={item.src} sizes="100vw" width={400} height={400} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
                                 </div>
-                                <h5 className="text-sm md:text-lg xl:text-xl font-medium">{item.club}</h5>
+                                {/* <h5 className="text-sm md:text-lg xl:text-xl font-medium">{item.club}</h5> */}
 
                             </div>
                         );
