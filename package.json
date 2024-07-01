@@ -16,7 +16,8 @@
     "flowbite": "^2.4.1",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "yet-another-react-lightbox": "^3.20.1"
   },
   "devDependencies": {
     "@types/node": "^20",
