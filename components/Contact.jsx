@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { sendEmail } from '@/constants/serverAction';
 import PhotoGallery from './Carousel';
+import PricingBox from './Pricing/PricingBox';
+import OfferList from './Pricing/OfferList';
 const Contact = () => {
     const [isSending, setIsSending] = useState(false);
     const [message, setMessage] = useState({
@@ -107,6 +109,40 @@ const Contact = () => {
                     </p>
                 </form>
             </div>
+            <div className="max-w-7xl mx-auto p-6">
+                <h1 className="text-6xl font-bold text-center my-8" style={{ fontFamily: "" }}>
+                    Our Pricing Plan
+                </h1>
+                <div className="grid gap-8 lg:grid-cols-3">
+                    <PricingBox
+                        packageName="Single Room"
+                        price="1600Rs"
+                        duration="night"
+                        subtitle="Single Occupancy"
+                    >
+                        <OfferList text="Single Room (Single Occupancy)" status="active" />
+                        <OfferList text="Number of Rooms Available: 4" status="active" />
+                    </PricingBox>
+                    <PricingBox
+                        packageName="Single Room"
+                        price="2500Rs"
+                        duration="night"
+                        subtitle="Double Occupancy"
+                    >
+                        <OfferList text="Single Room (Double Occupancy)" status="active" />
+                        <OfferList text="Number of Rooms Available: 4" status="active" />
+                    </PricingBox>
+                    <PricingBox
+                        packageName="Family Room"
+                        price="4500Rs"
+                        duration="night"
+                        subtitle="(2 double beds : occupy 4 persons)"
+                    >
+                        <OfferList text="Family Room" status="active" />
+                        <OfferList text="Number of Rooms Available: 4" status="active" />
+                    </PricingBox>
+                </div>
+            </div>
             <PhotoGallery />
             <div className="max-w-7xl mx-auto p-6 pt-0">
                 <h1 className="text-6xl font-extrabold text-center my-8" style={{ fontFamily: "cursive" }}>
@@ -170,8 +206,8 @@ const Contact = () => {
 
                 </div>
             </div>
-            <section id='book' className=" p-8 flex flex-row items-center " style={{ padding: "10px 50px" }}>
-                <div className='w-[50%] text-green-90 '>
+            <section id='book' className=" p-8 flex flex-col md:flex-row flex-wrap justify-center gap-20 items-center " style={{ padding: "10px 50px" }}>
+                <div className='md:w-[50%] w-[90%]  text-green-90  '>
                     <p className='text-5xl font-bold ' style={{ fontFamily: "" }}>
                         Discover the wonders of Kupwara District
 
@@ -183,7 +219,7 @@ const Contact = () => {
                     </p>
 
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210253.93000267434!2d74.08446405000001!3d34.5733588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e0dc5c6ce664cf%3A0x4b6498fca3764e50!2s193224!5e0!3m2!1sen!2s!4v1720337075949!5m2!1sen!2s" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210253.93000267434!2d74.08446405000001!3d34.5733588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e0dc5c6ce664cf%3A0x4b6498fca3764e50!2s193224!5e0!3m2!1sen!2s!4v1720337075949!5m2!1sen!2s" width="200" className='w-[90%] md:w-[400px]' height="450" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
             </section>
             <h1 className='text-6xl text-green-90 font-extrabold  my-2 text-center' style={{ fontFamily: "cursive" }}>

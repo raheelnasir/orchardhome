@@ -9,7 +9,7 @@ import Container from "./Container";
 
 const galleryThumbnails = [
     {
-        id: 6,
+        id: 1,
         src: "/gallery/home.jpg",
         club: "House Snaps",
         city: "Berlin",
@@ -17,12 +17,20 @@ const galleryThumbnails = [
         slides: [{ src: "/gallery/home.jpg" }, { src: "/gallery/bedroom1.png" }, { src: "/gallery/bedroom2.png" }, { src: "/gallery/washroom.JPG" }],
     },
     {
-        id: 6,
+        id: 2,
         src: "/gallery/beauty.jpg",
         club: "Nearby Locations",
         city: "Berlin",
         date: "25/12/2017",
         slides: [{ src: "/gallery/beauty.jpg" }, { src: "/gallery/largeview.jpg" }, { src: "/gallery/sheepview.jpg" }, { src: "/gallery/mountainskyview.JPG" }, { src: "/gallery/ducks.JPG" }, { src: "/gallery/flower.JPG" }],
+    },
+    {
+        id: 3,
+        src: "https://www.holidaymonk.com/wp-content/uploads/2021/09/Kashmiri-Food-and-Travel.jpg",
+        club: "Traditional Dishes",
+        city: "Berlin",
+        date: "25/12/2017",
+        slides: [{ src: "https://www.holidaymonk.com/wp-content/uploads/2021/09/Kashmiri-Food-and-Travel.jpg" }, { src: "/gallery/largeview.jpg" }, { src: "/gallery/sheepview.jpg" }, { src: "/gallery/mountainskyview.JPG" }, { src: "/gallery/ducks.JPG" }, { src: "/gallery/flower.JPG" }],
     }
 
 
@@ -47,7 +55,7 @@ export default function PhotoGallery() {
     };
 
     return (
-        <section id="photo-gallery" className={`w-full  mt-16 pb-14 lg:mt-56  lg:pb-56 lg:mb-[22.5rem] reveal${isIntersecting ? " visible" : ""}`} ref={sectionRef}>
+        <section id="photo-gallery" className={`w-full   pb-14 lg:mt-10  lg:pb-56 lg:mb-[22.5rem] reveal${isIntersecting ? " visible" : ""}`} ref={sectionRef}>
             <Container customClasses="lg:absolute  lg:left-1/2 lg:-translate-x-1/2">
                 <h2 className="font-bold text-6xl pb-6">Gallery</h2>
                 <p>Click to see more..</p>
@@ -56,7 +64,7 @@ export default function PhotoGallery() {
                         return (
                             <div className="flex flex-col mb-5 leading-none" key={item.id}>
                                 <div className="w-full h-full rounded-lg bg-fluo-green transition-all">
-                                    <Image className="rounded-lg cursor-pointer hover:opacity-60 lg:w-[40vw] w-[80vw] min-h-[300px] max-h-[300px] transition-all" src={item.src} sizes="100vw" width={400} height={400} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
+                                    <img className="rounded-lg cursor-pointer hover:opacity-60 lg:w-[40vw] w-[80vw] min-h-[300px] max-h-[300px] transition-all" src={item.src} sizes="100vw" width={400} height={400} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
                                 </div>
                                 <h5 className=" text-center font-bold text-xl md:text-2xl xl:text-3xl ">{item.club}</h5>
 
