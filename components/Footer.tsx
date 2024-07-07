@@ -9,12 +9,12 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <footer className='flexCenter mb-24'>
+    <footer className='flexCenter border-t pt-5 mb-24'>
       <div className='padding-container max-container flex w-full flex-col gap-14'>
         <div className='flex flex-col items-start justify-center gap-[10%] md:flex-row'>
-          <Link href='/' className='mb-10 text-[30px] font-bold'>
-          Orchard Stay
-          </Link>
+          <div>
+            <img src="/logo-3.png" alt="" />
+          </div>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns: any) => (

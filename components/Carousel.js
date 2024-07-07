@@ -11,21 +11,21 @@ const galleryThumbnails = [
     {
         id: 6,
         src: "/gallery/home.jpg",
-        club: "House Shots",
+        club: "House Snaps",
         city: "Berlin",
         date: "25/12/2017",
-        slides: [{ src: "/gallery/home.jpg" }, { src: "/gallery/bedroom1.png" }, { src: "/gallery/bedroom2.png" }, { src: "/gallery/washroom.JPG" }, { src: "/gallery/farview.JPG" }],
+        slides: [{ src: "/gallery/home.jpg" }, { src: "/gallery/bedroom1.png" }, { src: "/gallery/bedroom2.png" }, { src: "/gallery/washroom.JPG" }],
     },
     {
         id: 6,
         src: "/gallery/beauty.jpg",
-        club: "Nature Shots",
+        club: "Nearby Locations",
         city: "Berlin",
         date: "25/12/2017",
         slides: [{ src: "/gallery/beauty.jpg" }, { src: "/gallery/largeview.jpg" }, { src: "/gallery/sheepview.jpg" }, { src: "/gallery/mountainskyview.JPG" }, { src: "/gallery/ducks.JPG" }, { src: "/gallery/flower.JPG" }],
-    },
+    }
 
-  
+
 
 
 ];
@@ -58,7 +58,7 @@ export default function PhotoGallery() {
                                 <div className="w-full h-full rounded-lg bg-fluo-green transition-all">
                                     <Image className="rounded-lg cursor-pointer hover:opacity-60 lg:w-[40vw] w-[80vw] min-h-[300px] max-h-[300px] transition-all" src={item.src} sizes="100vw" width={400} height={400} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
                                 </div>
-                                {/* <h5 className="text-sm md:text-lg xl:text-xl font-medium">{item.club}</h5> */}
+                                <h5 className=" text-center font-bold text-xl md:text-2xl xl:text-3xl ">{item.club}</h5>
 
                             </div>
                         );

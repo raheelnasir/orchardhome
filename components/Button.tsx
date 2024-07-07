@@ -14,10 +14,10 @@ const Button = (props: ButtonProps) => {
   return (
     <button
       type={type}
-      className={`flexCenter  rounded-full border 
+      className={` p-0 m-0 rounded-full border 
         ${variant} ${full && 'w-full'}`}>
-      <a href='https://wa.me/919596000000' target='_blank' className='flex'>
-        {icon && <Image alt={title} src={icon} width={24} height={24} />}
+      <a href='https://wa.me/919596000000' target='_blank' className='flex flex-row m-auto p-0'>
+        {icon && <Image alt={title} src={icon} width={20} height={20} />}
 
         <label className='bold-16'>{title}</label>
       </a>

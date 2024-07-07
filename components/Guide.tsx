@@ -16,11 +16,6 @@ const Guide = () => {
             <div className='flex  flex-wrap justify-between gap-5 lg:gap-10'>
               <h2 className='bold-40  font-[cursive] xl:max-w-[450px]'>
                 Nature Lover's Paradise
-
-
-
-
-
               </h2>
               <p className='regular-16 text-gray-30 xl:max-w-[620px]'>
                 Discover the serene beauty of Orchard House, where comfort meets nature. Enjoy our eye-catching rooms with stunning mountain and forest views, perfect for nature lovers seeking a peaceful retreat. Enhance your outdoor adventures with our high-quality travel equipment, including cozy tents and sturdy hiking sticks. Travel effortlessly with our reliable transportation services, ensuring a smooth and safe journey. Dive into a variety of focused activities, from wildlife tourism to savoring traditional Kashmiri food, and immerse yourself in local culture through agricultural and horticultural experiences. Orchard House is your ultimate destination for a relaxing and enriching escape.
