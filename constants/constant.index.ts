@@ -57,7 +57,7 @@ export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
     { label: 'Phone', value: '+919797152006' },
-    { label: 'Whatsapp', value: '+9197006379928' },
+    { label: 'Whatsapp', value: '+917006379928 ' },
     { label: 'Email', value: 'marifat.edu.17@gmail.com' },
   ],
 };

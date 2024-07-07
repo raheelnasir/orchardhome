@@ -69,15 +69,15 @@ const Footer = () => {
                 </div>
               ))}
             </FooterColumn>
-            <div className="fixed top-1/2 right-0 transform -translate-y-1/2 bg-green-90 p-2 rounded-l-lg flex flex-col gap-4">
+            <div className="fixed z-50 p-5 top-1/2 right-0 transform -translate-y-1/2 bg-green-90 p-2 rounded-l-lg flex flex-col gap-4">
               <a href="tel:+919797152006" target='_blank' className="text-white w-[20px]  hover:text-blue-500">
                 <FontAwesomeIcon icon={faPhoneAlt} fontSize={"20px"} />
 
               </a>
-              <a href="https://wa.me/+9197006379928" target='_blank' className="text-white hover:text-green-500">
+              <a href="https://wa.me/+917006379928" target='_blank' className="text-white hover:text-green-500">
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
               </a>
-              <a href="mailto:marifat.edu.17@gmail.com" className="text-white ">
+              <a href="mailto:marifat.edu.17@gmail.com" className="text-white hover:text-blue-400 ">
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />
               </a>
             </div>
