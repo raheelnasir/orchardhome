@@ -25,8 +25,9 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("hi")
         const { people, checkInDate, checkOutDate, name, email, phone } = formData;
         const messageToSend = `
         I want to request to book the house for the following dates:
@@ -38,7 +39,11 @@ const Contact = () => {
             Check-out Date: ${checkOutDate}
         `;
         try {
-            const message = sendEmail(formData.name, formData.email, messageToSend);
+            setIsSending(true)
+            const message = await sendEmail(name, email, messageToSend);
+            console.log("hi", message)
+
+
             if (message.type === true) {
                 setMessage({ message: "Booking request sent successfully", type: true })
             }
@@ -47,6 +52,7 @@ const Contact = () => {
 
             }
         } catch (error) {
+            console.log(error)
             setMessage({ message: "Failed to send booking", type: false })
         }
         finally {
@@ -56,6 +62,7 @@ const Contact = () => {
 
     return (
         <div>
+            {formData.name}
             <div className='flex flex-row flex-wrap border-t mt-8 pt-5'>
                 <div className="m-auto text-green-90 shadow-md rounded-lg p-6 ">
                     <h2 className="text-3xl font-bold mb-4">Policies</h2>
@@ -65,7 +72,7 @@ const Contact = () => {
                         <li>Flexible check-in and check-out times available 24 hours</li>
                     </ul>
                 </div>
-                <form className="contact-main m-auto   p-8 mb-0 md:w-[500px] w-full mt-4 shadow-lg" style={{ minWidth: "" }} onSubmit={handleSubmit}>
+                <form className="contact-main m-auto p-8 mb-0 md:w-[500px] w-full mt-4 shadow-lg" onSubmit={handleSubmit}>
                     {['name', 'people', 'checkInDate', 'checkOutDate', 'email', 'phone'].map((field, index) => (
                         <div className="relative mb-6" key={index}>
                             <input
@@ -165,11 +172,11 @@ const Contact = () => {
             </div>
             <section id='book' className=" p-8 flex flex-row items-center " style={{ padding: "10px 50px" }}>
                 <div className='w-[50%] text-green-90 '>
-                    <p className='text-5xl font-bold ' style={{fontFamily:""}}>
+                    <p className='text-5xl font-bold ' style={{ fontFamily: "" }}>
                         Discover the wonders of Kupwara District
 
                     </p>
-                    <p className='font-light text-xl ' style={{fontFamily:""}}>
+                    <p className='font-light text-xl ' style={{ fontFamily: "" }}>
                         A gem nestled in the northern reaches of Jammu and Kashmir, renowned for its breathtaking natural beauty and cultural richness.
                         Immerse yourself in the tranquil charm of Orchard Home Stay, surrounded by Kashmiri Apple garden.
 

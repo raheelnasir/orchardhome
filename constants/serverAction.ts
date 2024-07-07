@@ -1,8 +1,7 @@
 'use server'
 import nodemailer from 'nodemailer';
 
-export const sendEmail = async (formData: { name: string; email: string; message: string; }) => {
-    const { name, email, message } = formData;
+export const sendEmail = async (name: string, email: string, message: string) => {
 
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -17,7 +16,7 @@ export const sendEmail = async (formData: { name: string; email: string; message
         from: process.env.EMAIL,
         to: process.env.EMAIL2,
         subject: 'New Booking Request',
-        text: `Name: ${name} with Email: ${email}\n wants to create a support ticket for the message: ${message}`,
+        text: `Name: ${name} with Email: ${email}\n wants to book the house : ${message}`,
     };
 
     try {
