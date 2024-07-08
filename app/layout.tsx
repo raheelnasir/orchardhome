@@ -17,6 +17,9 @@ export default function RootLayout({
     <html lang='en'>
 
       <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
+
         <div className='relative w-full overflow-hidden'>
 
           <Navbar />
