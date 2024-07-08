@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className=''>
-        <header className="relative h-screen flex items-end justify-center text-white">
+        <header className="relative h-[80vh] !bg-top flex items-end justify-center text-white">
           <img src="/home.jpg" alt="Background Image" className="absolute inset-0 w-full h-full object-cover z-0" />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div>
           <div className="relative z-20 p-8 text-center">
