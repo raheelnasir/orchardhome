@@ -29,17 +29,17 @@ export default function CatalogueSection() {
             id: "04",
             category: "Hygienic Bathroom",
             title: "Clean Family Bathroom",
-            image: "/gallery/washroom.jpg",
+            image: "/gallery/washroom.png",
             description: "A clean and well-designed family bathroom."
         }
     ]
 
     return (
-        <div className="grid gap-8 divide-gray-300 md:min-h-[400px] lg:divide-x lg:gap-0 lg:grid-cols-4 md:grid-cols-2">
+        <div className="grid gap-8  divide-gray-300 md:min-h-[400px] lg:divide-x lg:gap-0 lg:grid-cols-4 md:grid-cols-2">
             {items.map((item) => (
                 <div key={item.id} className="relative overflow-hidden group">
                     <div>
-                        <img src={item.image} width={380} height={100} alt="" className="w-full md:!h-[400px] " />
+                        <img src={item.image} width={380} height={100} alt="" className="w-full min-h-[350px] md:!h-[400px] " />
                     </div>
                     <div className="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur">
                         <div className="flex justify-between pb-4 ">

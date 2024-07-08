@@ -117,7 +117,7 @@ export default function PhotoGallery() {
                                 return (
                                     <div className="flex flex-col mb-5 leading-none" key={item.id}>
                                         <div className="w-full h-full relative rounded-lg bg-fluo-green transition-all">
-                                            <img className="rounded-lg cursor-pointer hover:opacity-60  min-h-[250px] max-h-[250px] transition-all" src={item.src} sizes="100vw" width={185} height={220} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
+                                            <img className="rounded-lg cursor-pointer hover:opacity-60  min-h-[220px] max-h-[220px] transition-all" src={item.src} sizes="100vw" width={150} height={200} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
                                             <h5 className="absolute top-[94%] text-sm   bg-white w-full  z-50  " style={{ textShadow: "0px 0px 2px black" }}>{item.club}</h5>
 
                                         </div>
