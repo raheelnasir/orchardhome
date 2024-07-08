@@ -64,7 +64,7 @@ const Contact = () => {
 
     return (
         <div>
-            <div className='relative h-[500vh] md:h-[270vh]'>
+            <div className='relative h-[100vh] md:h-[100vh]'>
                 <PhotoGallery />
 
             </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="max-w-7xl mt-96 mx-auto p-6 pt-0">
-                <h1 className="text-6xl font-extrabold text-center my-8" style={{ fontFamily: "cursive" }}>
+                <h1 className="md:text-4xl text-2xl font-extrabold text-center my-8" style={{ fontFamily: "cursive" }}>
                     Welcome to ORCHARD HOMESTAY!
                 </h1>
                 <div className="grid gap-8 lg:grid-cols-3">
@@ -210,7 +210,7 @@ const Contact = () => {
             </div>
             <section id='book' className=" p-8 flex flex-col md:flex-row flex-wrap justify-center gap-20 items-center " style={{ padding: "10px 50px" }}>
                 <div className='md:w-[50%] w-[90%]  text-green-90  '>
-                    <p className='text-5xl font-bold ' style={{ fontFamily: "" }}>
+                    <p className='md:text-4xl  text-xl font-bold ' style={{ fontFamily: "" }}>
                         Discover the wonders of Kupwara District
 
                     </p>
@@ -224,7 +224,7 @@ const Contact = () => {
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210253.93000267434!2d74.08446405000001!3d34.5733588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e0dc5c6ce664cf%3A0x4b6498fca3764e50!2s193224!5e0!3m2!1sen!2s!4v1720337075949!5m2!1sen!2s" width="200" className='w-[90%] md:w-[400px]' height="450" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
             </section>
-            <h1 className='text-6xl text-green-90 font-extrabold mt-3 my-1 text-center' style={{ fontFamily: "cursive" }}>
+            <h1 className='md:text-4xl text-xl text-green-90 font-extrabold mt-3 my-1 text-center' style={{ fontFamily: "cursive" }}>
                 Orchard House
             </h1>
 

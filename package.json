@@ -14,10 +14,13 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "flowbite": "^2.4.1",
+    "infinite-react-carousel": "^1.2.11",
     "next": "13.5.4",
     "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "swiper": "^11.1.4",
     "yet-another-react-lightbox": "^3.20.1"
   },
   "devDependencies": {

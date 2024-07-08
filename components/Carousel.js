@@ -6,7 +6,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Image from "next/image";
 import Container from "./Container";
-
+import Slider from 'infinite-react-carousel';
 const galleryThumbnails = [
     {
         id: 1,
@@ -30,7 +30,7 @@ const galleryThumbnails = [
         club: "Traditional Dishes",
         city: "Berlin",
         date: "25/12/2017",
-        slides: [{ src: "https://www.holidaymonk.com/wp-content/uploads/2021/09/Kashmiri-Food-and-Travel.jpg" }, { src: "https://i.ndtvimg.com/i/2016-09/kashmiri-food-625_625x350_51473671605.jpg" },  { src: "https://ethnq.com/wp-content/uploads/2023/02/Kashmiri-Food-Culture.webp" }, { src: "https://www.tourmyindia.com/states/jammu-kashmir/image/cuisine-jk1.jpg" }],
+        slides: [{ src: "https://www.holidaymonk.com/wp-content/uploads/2021/09/Kashmiri-Food-and-Travel.jpg" }, { src: "https://i.ndtvimg.com/i/2016-09/kashmiri-food-625_625x350_51473671605.jpg" }, { src: "https://ethnq.com/wp-content/uploads/2023/02/Kashmiri-Food-Culture.webp" }, { src: "https://www.tourmyindia.com/states/jammu-kashmir/image/cuisine-jk1.jpg" }],
     },
     {
         id: 4,
@@ -87,22 +87,48 @@ export default function PhotoGallery() {
     };
 
     return (
-        <section id="photo-gallery" className={`w-full m-auto  pb-14 h-max relative lg:pb-56 lg:mb-[22.5rem] reveal${isIntersecting ? " visible" : ""}`} ref={sectionRef}>
+        <section id="photo-gallery" className={`w-full m-auto  pb-14 h-max relative reveal${isIntersecting ? " visible" : ""}`} ref={sectionRef}>
             <Container customClasses="lg:absolute  lg:left-1/2 lg:-translate-x-1/2">
-                <h2 className="font-bold text-6xl pb-6">Gallery</h2>
+                <h2 className="font-bold md:text-4xl text-xl  pb-6">Gallery</h2>
                 <p>Click to see more..</p>
-                <div className="flex md:flex-row flex-wrap flex-col items-center justify-center gap-4 mt-5">
-                    {galleryThumbnails.map((item, index) => {
-                        return (
-                            <div className="flex flex-col mb-5 leading-none" key={item.id}>
-                                <div className="w-full h-full rounded-lg bg-fluo-green transition-all">
-                                    <img className="rounded-lg cursor-pointer hover:opacity-60 lg:w-[40vw] w-[80vw] min-h-[300px] max-h-[300px] transition-all" src={item.src} sizes="100vw" width={400} height={400} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
-                                </div>
-                                <h5 className=" text-center font-bold text-xl md:text-2xl xl:text-3xl ">{item.club}</h5>
+                <div className="w-full">
 
-                            </div>
-                        );
-                    })}
+                    <div className="hidden md:block">
+                        <Slider dots slidesToShow={4} arrows={false} autoplay={true} autoplayScroll={1} autoplaySpeed={2000}	>
+
+                            {galleryThumbnails.map((item, index) => {
+                                return (
+                                    <div className="flex flex-col mb-5 leading-none" key={item.id}>
+                                        <div className="w-full h-full relative rounded-lg bg-fluo-green transition-all">
+                                            <img className="rounded-lg cursor-pointer hover:opacity-60  min-h-[300px] max-h-[300px] transition-all" src={item.src} sizes="100vw" width={300} height={300} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
+                                            <h5 className="absolute top-[91%]  bg-white w-[300px] z-50 text-center font-bold text-xl  " style={{ textShadow: "0px 0px 2px black" }}>{item.club}</h5>
+
+                                        </div>
+
+                                    </div>
+                                );
+                            })}
+                        </Slider>
+                    </div>
+                    <div className="md:hidden block">
+                        <Slider dots slidesToShow={2} arrows={false} autoplay={true} autoplayScroll={1} autoplaySpeed={2000}	>
+
+                            {galleryThumbnails.map((item, index) => {
+                                return (
+                                    <div className="flex flex-col mb-5 leading-none" key={item.id}>
+                                        <div className="w-full h-full relative rounded-lg bg-fluo-green transition-all">
+                                            <img className="rounded-lg cursor-pointer hover:opacity-60  min-h-[250px] max-h-[250px] transition-all" src={item.src} sizes="100vw" width={185} height={220} alt="Gallery gig thumbnail" onClick={() => clickHandler(index)} />
+                                            <h5 className="absolute top-[94%] text-sm   bg-white w-full  z-50  " style={{ textShadow: "0px 0px 2px black" }}>{item.club}</h5>
+
+                                        </div>
+
+                                    </div>
+                                );
+                            })}
+                        </Slider>
+                    </div>
+
+
                     <Lightbox open={openGallery} close={() => setOpenGallery(false)} slides={galleryThumbnails[galleryIndex].slides} />
                 </div>
             </Container>
