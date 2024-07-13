@@ -5,7 +5,6 @@ import Hero from '@/components/Hero';
 import Contact from '@/components/Contact';
 import CatalogueSection from '@/components/CatalogueSection';
 import CatalogSwiperSection from '@/components/CatalogSwiperCection';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
   
