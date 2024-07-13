@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Travel',
+  title: 'Orchard Home',
   description: 'Travel UI/UX for Camping',
 };
 
@@ -17,6 +17,8 @@ export default function RootLayout({
     <html lang='en'>
 
       <body>
+      <link rel="icon" href="/logo-33.png" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
 
