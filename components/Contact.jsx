@@ -119,7 +119,7 @@ const Contact = () => {
                 <div className="grid gap-8 lg:grid-cols-3">
                     <PricingBox
                         packageName="Single Room"
-                        price="1600Rs"
+                        price="20$"
                         duration="night"
                         subtitle="Single Occupancy"
                     >
@@ -128,7 +128,7 @@ const Contact = () => {
                     </PricingBox>
                     <PricingBox
                         packageName="Single Room"
-                        price="2500Rs"
+                        price="30$"
                         duration="night"
                         subtitle="Double Occupancy"
                     >
@@ -137,7 +137,7 @@ const Contact = () => {
                     </PricingBox>
                     <PricingBox
                         packageName="Family Room"
-                        price="4500Rs"
+                        price="54$"
                         duration="night"
                         subtitle="(2 double beds : occupy 4 persons)"
                     >
