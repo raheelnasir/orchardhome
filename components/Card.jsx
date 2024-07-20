@@ -3,11 +3,11 @@ import React from "react";
 const Card = () => {
     return (
         <>
-            <div className="h-full w-full">
+            <div className="h-full w-full fixed overflow-scroll top-0 z-50 bg-white">
                 <div className="relative h-[250px] w-full">
                     <div
                         className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: "url('pexels-wendywei-1787142.jpg')" }}
+                        style={{ backgroundImage: "url('/pexels-wendywei-1787142.jpg')" }}
                     ></div>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                     <div className="relative flex items-center justify-center h-full">
@@ -16,6 +16,7 @@ const Card = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="text-black text-center text-[40px] p-4 mt-2">
                     <h1>Welcome to Orchard Homestay in Jammu and Kashmir</h1>
                     <p className="text-[20px] mt-2">

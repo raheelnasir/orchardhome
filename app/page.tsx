@@ -1,5 +1,3 @@
-'use client'
-import { useState, useEffect } from 'react';
 import Feature from '@/components/Feature';
 import Guide from '@/components/Guide';
 import Camp from '@/components/Camp';
@@ -9,25 +7,8 @@ import CatalogueSection from '@/components/CatalogueSection';
 import CatalogSwiperSection from '@/components/CatalogSwiperCection';
 
 export default function Home() {
-  const images = [
-    '/home.jpg',
-    '/outview.png',
-    '/boat.png',
-  ];
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <>
-
       <div className=''>
         <header className="relative h-[100vh] mb-20 !bg-top flex items-end justify-center text-white">
           <img

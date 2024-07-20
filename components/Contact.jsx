@@ -4,6 +4,7 @@ import { sendEmail } from '@/constants/serverAction';
 import PhotoGallery from './Carousel';
 import PricingBox from './Pricing/PricingBox';
 import OfferList from './Pricing/OfferList';
+import Card from './Card';
 
 const Contact = () => {
     const [isSending, setIsSending] = useState(false);
@@ -11,6 +12,8 @@ const Contact = () => {
         message: '',
         type: true
     })
+    const [showCard, setShowCard] = useState(false)
+
     const [formData, setFormData] = useState({
         people: '',
         checkInDate: '',
@@ -211,8 +214,11 @@ const Contact = () => {
                         <p className="list-disc pl-5 space-y-2">
                             At Orchard Homestay, you will find a unique opportunity to advance your research endeavors. Owned by Dr. Shiekh Marifatul Haq, a distinguished researcher with over 150 published articles, our homestay offers a supportive environment for scholars and academics. Dr. Haq's extensive experience and knowledge provide an invaluable resource, making Orchard Homestay an ideal place for both relaxation and intellectual growth.
                         </p>
-                        <h1 className="list-disc pl-5 space-y-2"><b>Click to read more </b><a href="" className="text-blue-700 cursor:pointer">click here.</a></h1>
+                        <h1 className="list-disc pl-5 space-y-2"><b> </b><a href="" className="text-blue-700 cursor:pointer hover:cursor-pointer" onClick={() => setShowCard(!showCard)}>click here.</a></h1>
                     </div>
+                    {showCard && (<Card />)}
+                    {showCard && (<div onClick={() => setShowCard(!showCard)} className='fixed top-0 bg-red-600 z-[10000] text-white p-5'>Close</div>)}
+
 
                 </div>
             </div>

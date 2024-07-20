@@ -58,7 +58,9 @@ export const FOOTER_CONTACT_INFO = {
   links: [
     { label: 'Phone', value: '+919797152006' },
     { label: 'Whatsapp', value: '+917006379928 ' },
-    { label: 'Email', value: 'marifat.edu.17@gmail.com' },
+    { label: 'Email', value: 'orchardhomestay17@gmail.com' },
+    { label: 'Registration # ', value: 'JKPG00002528' },
+
   ],
 };
 
