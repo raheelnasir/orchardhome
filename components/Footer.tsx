@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='padding-container max-container flex w-full flex-col gap-14'>
         <div className='flex flex-col items-start justify-center gap-[10%] md:flex-row'>
           <div>
-            <img src="/logo-33.png" className='w-40' alt="" />
+            <img src="/logo.png" className='w-40' alt="" />
           </div>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
@@ -77,7 +77,7 @@ const Footer = () => {
               <a href="https://wa.me/+917006379928" target='_blank' className="text-white hover:text-green-500">
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
               </a>
-              <a href="mailto:marifat.edu.17@gmail.com" className="text-white hover:text-blue-400 ">
+              <a href="mailto:orchardhomestay17@gmail.com" className="text-white hover:text-blue-400 ">
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />
               </a>
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         <div className='border bg-gray-20' />
-        
+
       </div>
     </footer>
   );

@@ -39,15 +39,17 @@ const galleryThumbnails = [
     },
     {
         id: 3,
-        src: 'https://www.holidaymonk.com/wp-content/uploads/2021/09/Kashmiri-Food-and-Travel.jpg',
+        src: '/gallery/f1.jpg',
         club: 'Traditional Dishes',
         city: 'Berlin',
         date: '25/12/2017',
         slides: [
-            { src: 'https://www.holidaymonk.com/wp-content/uploads/2021/09/Kashmiri-Food-and-Travel.jpg', type: 'image' },
-            { src: 'https://i.ndtvimg.com/i/2016-09/kashmiri-food-625_625x350_51473671605.jpg', type: 'image' },
-            { src: 'https://ethnq.com/wp-content/uploads/2023/02/Kashmiri-Food-Culture.webp', type: 'image' },
-            { src: 'https://www.tourmyindia.com/states/jammu-kashmir/image/cuisine-jk1.jpg', type: 'image' }
+            { src: '/gallery/f1.jpg', type: 'image' },
+            { src: '/gallery/f2.jpg', type: 'image' },
+            { src: '/gallery/f3.jpg', type: 'image' },
+            { src: '/gallery/f4.jpg', type: 'image' },
+            { src: '/gallery/f5.jpg', type: 'image' },
+            { src: '/gallery/f6.jpg', type: 'image' }
         ],
     },
     {

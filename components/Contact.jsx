@@ -4,6 +4,7 @@ import { sendEmail } from '@/constants/serverAction';
 import PhotoGallery from './Carousel';
 import PricingBox from './Pricing/PricingBox';
 import OfferList from './Pricing/OfferList';
+
 const Contact = () => {
     const [isSending, setIsSending] = useState(false);
     const [message, setMessage] = useState({
@@ -119,7 +120,7 @@ const Contact = () => {
                 <div className="grid gap-8 lg:grid-cols-3">
                     <PricingBox
                         packageName="Single Room"
-                        price="20$"
+                        price="1600₹"
                         duration="night"
                         subtitle="Single Occupancy"
                     >
@@ -128,7 +129,7 @@ const Contact = () => {
                     </PricingBox>
                     <PricingBox
                         packageName="Single Room"
-                        price="30$"
+                        price="2500₹"
                         duration="night"
                         subtitle="Double Occupancy"
                     >
@@ -137,7 +138,7 @@ const Contact = () => {
                     </PricingBox>
                     <PricingBox
                         packageName="Family Room"
-                        price="54$"
+                        price="4500₹"
                         duration="night"
                         subtitle="(2 double beds : occupy 4 persons)"
                     >
@@ -205,6 +206,13 @@ const Contact = () => {
                             <li>Facilities for trekking (tents, sleeping bags, trekking sticks)</li>
                         </ul>
                     </div>
+                    <div className="bg-white text-green-90 hover:bg-green-90 hover:text-white shadow-md rounded-lg p-6">
+                        <h2 className="text-3xl font-bold mb-4">Research Opportunities</h2>
+                        <p className="list-disc pl-5 space-y-2">
+                            At Orchard Homestay, you will find a unique opportunity to advance your research endeavors. Owned by Dr. Shiekh Marifatul Haq, a distinguished researcher with over 150 published articles, our homestay offers a supportive environment for scholars and academics. Dr. Haq's extensive experience and knowledge provide an invaluable resource, making Orchard Homestay an ideal place for both relaxation and intellectual growth.
+                        </p>
+                        <h1 className="list-disc pl-5 space-y-2"><b>Click to read more </b><a href="" className="text-blue-700 cursor:pointer">click here.</a></h1>
+                    </div>
 
                 </div>
             </div>
@@ -229,7 +237,7 @@ const Contact = () => {
             </h1>
 
 
-        </div>
+        </div >
     );
 };
 

@@ -7,7 +7,7 @@ const Navbar = () => {
 
       <div className='relative bg-transparent flex flex-row justify-between w-[90vw]'>
         <div className='flex flex-row items-center'>
-          <img src="/logo-33.png" className='w-14' alt="" />
+          <img src="/logo.png" className='w-14' alt="" />
 
         </div>
 

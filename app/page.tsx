@@ -7,14 +7,15 @@ import Hero from '@/components/Hero';
 import Contact from '@/components/Contact';
 import CatalogueSection from '@/components/CatalogueSection';
 import CatalogSwiperSection from '@/components/CatalogSwiperCection';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Card from '@/components/Card';
+
 
 export default function Home() {
   const images = [
     '/home.jpg',
     '/outview.png',
     '/boat.png',
-
-    // Add more image URLs as needed
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -29,10 +30,11 @@ export default function Home() {
 
   return (
     <>
+
       <div className=''>
         <header className="relative h-[100vh] mb-20 !bg-top flex items-end justify-center text-white">
           <img
-            src={images[currentImageIndex]}
+            src={'/home.jpg'}
             alt="Background Image"
             className="absolute inset-0 bg-center  w-full h-full object-cover z-0"
           />
