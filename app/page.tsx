@@ -7,9 +7,6 @@ import Hero from '@/components/Hero';
 import Contact from '@/components/Contact';
 import CatalogueSection from '@/components/CatalogueSection';
 import CatalogSwiperSection from '@/components/CatalogSwiperCection';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Card from '@/components/Card';
-
 
 export default function Home() {
   const images = [
