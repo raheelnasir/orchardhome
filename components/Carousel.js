@@ -17,6 +17,7 @@ const galleryThumbnails = [
         date: '25/12/2017',
         slides: [
             { src: '/gallery/home.jpg', type: 'image' },
+            { src: '/gallery/Home11.jpg', type: 'image' },
             { src: '/gallery/bedroom1.png', type: 'image' },
             { src: '/gallery/bedroom2.png', type: 'image' },
             { src: '/gallery/washroom.JPG', type: 'image' }
@@ -39,7 +40,7 @@ const galleryThumbnails = [
     },
     {
         id: 3,
-        src: '/gallery/f1.jpg',
+        src: '/gallery/f2.jpg',
         club: 'Traditional Dishes',
         city: 'Berlin',
         date: '25/12/2017',

@@ -34,7 +34,7 @@ const Hero = () => {
 
           <h1 className=' md:text-3xl text-2xl font-bold'> Your Perfect Gateway</h1>
           <p className='regular-16 mt-6 md:text-2xl !text-base  text-gray-30 xl:max-w-[520px]'>
-            Escape to the tranquility of our Orchard House, nestled amidst lush fruit trees and scenic landscapes. This charming retreat offers travelers a serene haven with modern comforts, just a stone's throw away from local attractions. Enjoy cozy accommodations, breathtaking views, and the unique experience of staying in a working orchard. Whether you're seeking a peaceful retreat or an adventurous getaway, the Orchard House provides the perfect blend of relaxation and exploration.
+            Escape to the tranquility of our Orchard Homestay, nestled amidst lush fruit trees and scenic landscapes. This charming retreat offers travelers a serene haven with modern comforts, just a stone's throw away from local attractions. Enjoy cozy accommodations, breathtaking views, and the unique experience of staying in a working orchard. Whether you're seeking a peaceful retreat or an adventurous getaway, the Orchard House provides the perfect blend of relaxation and exploration.
           </p>
 
           <div className='my-11 flex flex-wrap gap-5'>

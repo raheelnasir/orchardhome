@@ -41,13 +41,12 @@ export default function CatalogueSection() {
                     <div>
                         <img src={item.image} width={380} height={100} alt="" className="w-full min-h-[350px] md:!h-[400px] " />
                     </div>
-                    <div className="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur">
-                        <div className="flex justify-between pb-4 ">
-                            <p className="text-sm">{item.category}</p>
+                    <div className="absolute top-0 p-2 bg-white bg-opacity-60 backdrop-blur">
+                        <div className="flex justify-between pb-2 ">
+                            <p className="block text-sm font-semibold">{item.category}</p>
                             <span className="text-sm ">{item.id}</span>
                         </div>
-                        <a className="block text-xl font-semibold" href="">{item.title}</a>
-                        <p className="py-4 text-gray-500">{item.description}</p>
+                        <p className=" text-gray-500">{item.description}</p>
                     </div>
 
                     <div className="inset-0 flex-col items-center justify-end hidden gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 md:flex md:absolute group-hover:translate-y-full md:border-b-0 bg-zinc-100">
